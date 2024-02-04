@@ -121,6 +121,10 @@ button:disabled {
     flex-grow: 1;
 }
 
+.green {
+    background-color: #94E8B4;
+}
+
 /* https://stackoverflow.com/questions/20954521/rounded-border-text-input-css
 https://stackoverflow.com/questions/40769551/how-to-use-google-fonts-in-react-js
 https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/
