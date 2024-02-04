@@ -7,7 +7,7 @@ import Test from './test/test';
 import NavigationBar from './components/NavBar';
 import AboutUS from './components/AboutUs';
 import ListingsCard from './components/ListingsCard';
-
+import ListingsGrid from './components/ListingsLayout';
 import LandingPage from './pages/LandingPage';
 // import FlashVolunteerList from './components/FlashVolunteer';
 
@@ -18,9 +18,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/home"/>}/>
         {/* <Route path="/home" element={<AboutUS/>}/> */}
-        <Route path="/home/Listings" element={<ListingsCard/>}/>
-        <Route path="/home/test" element={<Test/>} />
         <Route path="/home" element={<LandingPage/>}/>
+        {/* <Route path="/home/Listings" element={<ListingsCard/>}/> */}
+        <Route path="/home/test" element={<Test/>} />
+        <Route path="/home/searchedlistings" element={<Test/>}/>
+        <Route path="/home/listings" element={<ListingsGrid/>}/>
+        {/* <Route path="/home" element={<LandingPage/>}/> */}
         {/* <Route path="/volunteerwithus" element={<FlashVolunteerList/>}/> */}
         <Route path="/home/test" element={<Test/>} />
         {/* <Route path="/listings" element={<Test/>} /> */}

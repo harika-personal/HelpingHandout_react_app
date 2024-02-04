@@ -1,0 +1,7 @@
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    gap: 20px; 
+    padding: 20px;
+  }
+  
