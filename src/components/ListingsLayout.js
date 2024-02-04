@@ -24,18 +24,18 @@ const ListingsGrid = () => {
   }, []);
 
   return (
+    <><p>All Listings</p>
     <div className="listings-grid">
-      {listings.slice(0, 9).map((listing, index) => (
-        <ListingsCard
-          key={index}
-          imageUrl={listing.image}
-          location={listing.location}
-          isLocal={listing.isLocal ? 'Local' : ''}
-          description={listing.description}
-          nameOfSource={listing.donor}
-        />
-      ))}
-    </div>
+          {listings.slice(0, 9).map((listing, index) => (
+              <ListingsCard
+                  key={index}
+                  imageUrl={listing.image}
+                  location={listing.location}
+                  isLocal={listing.isLocal ? 'Local' : ''}
+                  description={listing.description}
+                  nameOfSource={listing.donor} />
+          ))}
+      </div></>
   );
 };
 

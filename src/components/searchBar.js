@@ -27,28 +27,55 @@ const SearchBar = () => {
         
     const handleSearch = async () => {
         console.log("searchTermWhat: ", searchTermWhat, "searchTermWhere: ", searchTermWhere);
-        const result = await client.getAllListings({searchTermWhat, searchTermWhere });
-        console.log(result); 
-        navigate('/home/test');
+        // axios.get(`${BASE_API}/listings/search`, {params})
+        // // const result = await client.getAllListings({searchTermWhat, searchTermWhere });
+        // const result = await axios.get(`${BASE_API}/listings/search`, {params})
+        // console.log(result); 
+        // navigate('/home/test');
+
+        
+        // axios.get(`${BASE_API}/listings/search`, {params})
+        // .then((response) => {
+        //   // Handle the response data here
+        //   console.log(response.data);
+        // })
+        // .catch((error) => {
+        //   // Handle errors
+        //   console.error(error);
+        // });
+
+        // window.location.href = `/listings?what=${searchTermWhat}&where=${searchTermWhere}`;
+
+        axios.get(`${BASE_API}/listings/search`, {params})
+        .then((response) => {
+            // Handle the response data here
+            console.log(response.data);
+            navigate(`/listings?what=${searchTermWhat}&where=${searchTermWhere}`);
+        })
+        .catch((error) => {
+            // Handle errors
+            console.error(error);
+        });
+    
     };
   
     return (
         <div id="outer">
             <div id="search-wrapper">
-                <div class="field-wrapper">
-                    <div  class="field-title">What</div>
-                    <input class="one"
+                <div className="field-wrapper">
+                    <div  className="field-title">What</div>
+                    <input className="one"
                     type="text"
                     value={searchTermWhat}
                     placeholder="What are you looking for?"
                     onChange={(e) => setSearchTermWhat(e.target.value)}
                     />
                 </div>
-                <div id="stack" class="field-wrapper">
-                    <div class="vertical-line">
+                <div id="stack" className="field-wrapper">
+                    <div className="vertical-line">
                         </div>
                     <div>
-                        <div  class="field-title">Where</div>
+                        <div  className="field-title">Where</div>
                         <input
                         type="text"
                         value={searchTermWhere}
@@ -59,7 +86,7 @@ const SearchBar = () => {
 
                 </div>
                 
-                <button  class="round" disabled={!isFormValid()} onClick={handleSearch} ><FontAwesomeIcon icon={faSearch} /></button>
+                <button  className="round" disabled={!isFormValid()} onClick={handleSearch} ><FontAwesomeIcon icon={faSearch} /></button>
             </div>
         </div>
     );
