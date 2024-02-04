@@ -13,8 +13,9 @@
 } */
 
 .Inspiration {
-    margin: 10px;
+    margin-top: 30px;
     display: flex;
+    justify-content: center;
 }
 
 .aboutus-logo {
