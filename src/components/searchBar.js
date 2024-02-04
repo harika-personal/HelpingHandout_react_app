@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+import * as client from '../httprequests/client';
 import "../styles/searchBar.css";
-
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+
 // import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export const BASE_API = process.env.REACT_APP_BASE_API_URL || "http://localhost:4000";
@@ -11,7 +13,7 @@ export const BASE_API = process.env.REACT_APP_BASE_API_URL || "http://localhost:
 
 const SearchBar = () => {
 
-
+    const navigate = useNavigate();
     const [searchTermWhat, setSearchTermWhat] = useState('');
     const [searchTermWhere, setSearchTermWhere] = useState('');
     const isFormValid = () => {
@@ -23,18 +25,11 @@ const SearchBar = () => {
         paramWhere: searchTermWhere,
         };
         
-    const handleSearch = () => {
-      axios.get(`${BASE_API}/listings/search`, {params})
-        .then((response) => {
-          // Handle the response data here
-          console.log(response.data);
-        })
-        .catch((error) => {
-          // Handle errors
-          console.error(error);
-        });
-
-        window.location.href = `/listings?what=${searchTermWhat}&where=${searchTermWhere}`;
+    const handleSearch = async () => {
+        console.log("searchTermWhat: ", searchTermWhat, "searchTermWhere: ", searchTermWhere);
+        const result = await client.getAllListings({searchTermWhat, searchTermWhere });
+        console.log(result); 
+        navigate('/home/test');
     };
   
     return (

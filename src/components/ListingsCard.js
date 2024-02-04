@@ -11,10 +11,10 @@ const ListingsCard = ({ imageUrl, location, isLocal, description, nameOfSource }
 
                 {/* Buttons positioned over the image */}
                 <div className="button-container1">
-                    <button>{location}</button>
+                    <button className="location-button">{location}</button>
                     <br />
                     <br />
-                    <button>{isLocal}</button>
+                    <button className="local-button">{isLocal}</button>
                 </div>
                 <div className="button-container2">
                     <p>{description}</p>

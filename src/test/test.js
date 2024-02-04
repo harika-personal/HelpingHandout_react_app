@@ -28,11 +28,11 @@ function Test() {
             <div>Helloooo</div>
             <div>FirstName: {user.firstName} </div>
             <div>LastName: {user.lastName} </div>
-            <div>
+            {/* <div>
                 <ListingsCard 
                 imageUrl="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 />
-            </div>
+            </div> */}
         </div>
     );
 
