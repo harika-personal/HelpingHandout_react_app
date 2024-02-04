@@ -50,14 +50,18 @@ const SearchBar = () => {
         .then((response) => {
             // Handle the response data here
             console.log(response.data);
-            navigate(`/listings?what=${searchTermWhat}&where=${searchTermWhere}`);
+            // navigate(`/listings?what=${searchTermWhat}&where=${searchTermWhere}`);
         })
         .catch((error) => {
             // Handle errors
             console.error(error);
         });
-    
+
     };
+
+    const goToSearchPage = async () => {
+            navigate('/home/searchedlistings');
+        }
   
     return (
         <div id="outer">
@@ -69,6 +73,7 @@ const SearchBar = () => {
                     value={searchTermWhat}
                     placeholder="What are you looking for?"
                     onChange={(e) => setSearchTermWhat(e.target.value)}
+                    onFocus={goToSearchPage}
                     />
                 </div>
                 <div id="stack" className="field-wrapper">
