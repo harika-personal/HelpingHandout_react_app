@@ -9,7 +9,7 @@ import AboutUS from './components/AboutUs';
 import ListingsCard from './components/ListingsCard';
 
 import LandingPage from './pages/LandingPage';
-import FlashVolunteerList from './components/FlashVolunteer';
+// import FlashVolunteerList from './components/FlashVolunteer';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Route path="home/Listings" element={<ListingsCard/>}/>
         <Route path="/home/test" element={<Test/>} />
         <Route path="/home" element={<LandingPage/>}/>
-        <Route path="/volunteerwithus" element={<FlashVolunteerList/>}/>
+        {/* <Route path="/volunteerwithus" element={<FlashVolunteerList/>}/> */}
         <Route path="/home/test" element={<Test/>} />
         {/* <Route path="/listings" element={<Test/>} /> */}
       </Routes>
