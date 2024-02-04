@@ -1,13 +1,10 @@
-# Note to developers
+# Front-End Dev Guide
+Link to Back-End Repo: https://github.com/Shumeng-Guo/HelpingHandout
+## Clone the Repo to Get Started 
+`git clone git@github.com:harika-personal/HelpingHandout_react_app.git`
 
-# install axios, react-router-dom, bootstrap
-
-
-
-
-
-
-
+## Install the Node packages
+`npm instal `
 
 # Getting Started with Create React App
 
