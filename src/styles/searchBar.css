@@ -1,0 +1,132 @@
+/* https://react.dev/learn/tutorial-tic-tac-toe  */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/* @font-face {
+    font-family: 'Lexend';
+    src: url('YOUR_FONT_URL.woff2') format('woff2'),
+         url('YOUR_FONT_URL.woff') format('woff');
+    font-weight: normal;
+  } */
+
+* {
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    font-size: large;
+}
+
+#outer {
+    display: flex;
+    justify-content: center;
+    /* width: 80%; */
+    /* width: 80vw; */
+}
+
+#search-wrapper {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    /* display: inline-block; */
+    max-width: 70%; 
+}
+
+
+input[type=text] {
+    font-family: "Lexend", sans-serif;
+    border: 0px solid #2d9fd9;
+    border-left: 1px;
+    border-radius: 20px;
+    color: gray;
+    background-color: transparent;
+    overflow: visible !important; 
+    font-size: medium;
+}
+
+.one {
+    width: 120%;
+    margin-right: 20px;
+}
+
+
+input:focus-within {
+    /* background-color: gray; */
+    border: none !important;
+    border-style: none;
+    border:none;
+    outline-width: 0;
+}
+
+button.round {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AF125A;
+    color: black;
+    outline: none;
+    box-shadow: none;
+    border: none;
+
+    &:hover {
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+} 
+
+.field-title {
+    color: black;
+
+}
+
+button:disabled {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AF125A;
+    color: black;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    cursor: not-allowed;
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: black; 
+    min-height: 90%; 
+    float: left; 
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+#stack {
+    display: flex;
+}
+
+.field-wrapper {
+    flex-grow: 1;
+}
+
+/* https://stackoverflow.com/questions/20954521/rounded-border-text-input-css
+https://stackoverflow.com/questions/40769551/how-to-use-google-fonts-in-react-js
+https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/
+https://stackoverflow.com/questions/450903/how-can-i-make-a-div-not-larger-than-its-contents
+https://fontawesome.com/docs/web/use-with/react/add-icons
+https://dev.to/davidemaye/how-to-set-up-font-awesome-in-react-5a8d
+https://www.freecodecamp.org/news/how-to-add-font-awesome-icons-to-your-buttons/
+https://stackoverflow.com/questions/3148415/how-to-make-a-vertical-line-in-html
+ */

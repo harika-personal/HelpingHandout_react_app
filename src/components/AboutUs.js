@@ -1,11 +1,11 @@
 import image from '../assets/WebsiteImage.png';
-import './LandingPage.css';
+import '../styles/AboutUs.css';
 
 const AboutUS = () => {
 
 
     return (
-        <div className = "LandingPage">
+        <div className = "Inspiration">
             <div className='row'>
                 <img className='col-3 mr -2'
                     src={image}
