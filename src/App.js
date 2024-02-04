@@ -3,7 +3,8 @@ import './App.css';
 import React from 'react';
 import { Router, Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import Test from './test/test';
-import LandingPage from './pages';
+import AboutUS from './pages/AboutUs';
+import Articles from './components/Articles';
 
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/home"/>}/>
-        <Route path="/home" element={<LandingPage/>}/>
-        <Route path="/home/test" element={<Test/>} />
+        {/* <Route path="/home" element={<AboutUS/>}/> */}
+        <Route path="/home" element={<Articles/>}/>
+        <Route path="/home/home/test" element={<Test/>} />
         <Route path="/listings" element={<Test/>} />
       </Routes>
 

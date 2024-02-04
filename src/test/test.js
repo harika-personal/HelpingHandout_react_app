@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as client from "./client";
 
 function Test() {
-    const API = "http://localhost:4000/";
+    // const API = "http://localhost:4000/";
     const [user, setUser] = useState([]);
 
     const getUser = async () => {
