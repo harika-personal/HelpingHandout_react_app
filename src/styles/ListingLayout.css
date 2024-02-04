@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    gap: 20px; 
+    justify-items: center;
+  }
+
+p {
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 30px;
+}

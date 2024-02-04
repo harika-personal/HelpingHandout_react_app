@@ -4,7 +4,7 @@ const ArticlesCard = ({ image, link, headline, source }) => {
 
     return (
         <div className="Articles-card">
-            <div className="card " style={{ width: '435px', height: '470px' }}>
+            <div className="card " style={{ width: '435px', height: '421px' }}>
                 {/* Clickable card, you can add an onClick handler to the whole card */}
                 <a href={link}
                     style={{ textDecoration: 'none', color: 'inherit' }}>

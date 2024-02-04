@@ -9,7 +9,7 @@ import ArticlesCard from "./ArticlesCard";
 const Articles = () => {
 
     return (
-        <div className="Aritcles">
+        <div className="Article">
             <div className="Article-heading">News we care about...</div>
             <div className="row">
                 <div className="col">

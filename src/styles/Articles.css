@@ -1,5 +1,11 @@
 .Article {
-    margin: 10px;
+    margin: 30px;
+
+}
+
+.row{
+    display: flex;
+    justify-content: center;
 }
 
 div.card {
@@ -9,10 +15,12 @@ div.card {
 .card-image {
     width: 435px; 
     height: 421px;
+    top: 950px;
+    left: 98px;
+    border-radius: 30px;
     /* width: 100%;
     height: 170%; */
     margin-left: 2px;
-    border-radius: 8px;
     overflow: hidden;
     /* border-color: rgba(0, 0, 0, 0); */
     /* transition: transform 0.3s ease-in-out; */
@@ -30,6 +38,7 @@ div.card {
 .Articles-card {
     height: 20rem;
     width: 20rem;
+    margin-left: 2px;
 }
 
 .card-source {
