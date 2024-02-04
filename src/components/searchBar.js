@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import "./searchBar.css";
+import "../styles/searchBar.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
