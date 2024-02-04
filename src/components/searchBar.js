@@ -4,7 +4,7 @@ import "../styles/searchBar.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export const BASE_API = process.env.REACT_APP_BASE_API_URL || "http://localhost:4000";
 
@@ -24,7 +24,7 @@ const SearchBar = () => {
         };
         
     const handleSearch = () => {
-      axios.get(`${BASE_API}/listings`, {params})
+      axios.get(`${BASE_API}/listings/search`, {params})
         .then((response) => {
           // Handle the response data here
           console.log(response.data);
