@@ -12,6 +12,7 @@ import LandingPage from './pages/LandingPage';
 import FlashVolunteersCard from './components/FlashVolunteersCard';
 import DonationListings from './pages/DonationListingsPage';
 import SearchedListings from './pages/SearchedListings';
+import ComingSoonPage from './pages/ComingSoonPage';
 // import FlashVolunteerList from './components/FlashVolunteer';
 
 function App() {
@@ -25,8 +26,10 @@ function App() {
         
         {/* <Route path="/home/Listings" element={<ListingsCard/>}/> */}
         <Route path="/home/test" element={<Test/>} />
-        <Route path="home/searchedlistings" element={<SearchedListings/>}/>
+
         <Route path="/home/listings" element={<DonationListings/>}/>
+        <Route path="home/searchedlistings" element={<SearchedListings/>}/>
+        <Route path="comingsoon" element={<ComingSoonPage/>}/>
         {/* <Route path="/home" element={<LandingPage/>}/> */}
         {/* <Route path="/volunteerwithus" element={<FlashVolunteerList/>}/> */}
         <Route path="/home/test" element={<Test/>} />

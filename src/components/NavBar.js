@@ -10,14 +10,14 @@ const NavigationBar = () => {
   return (
     <nav className="navigation-bar">
       <div className="nav-logo">
-        <a href="/home">
+        <a href="/">
             <img src={image}/>
         </a>
       </div>
       <div className="nav-links">
         {/* <a href="/volunteerwithus">Volunteer with Us</a> */}
         <Link
-              to={`/home/listings`}
+              to={`/comingsoon`}
               className="navbar-left-button"
               style={{ textDecoration: "none" }}
             >
@@ -34,14 +34,14 @@ const NavigationBar = () => {
       </div>
       <div className="nav-donate">
         <button onClick={() => { 
-          navigate("/home/listings");
+          navigate("/comingsoon");
         }}>
           Want to donate?
         </button>
       </div>
       <div className="nav-user">
         <button onClick={() => { 
-          navigate("/login");
+          navigate("/comingsoon");
          }}>
           Log in / Sign Up
           <img src={image2}/>
